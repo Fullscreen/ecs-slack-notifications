@@ -266,7 +266,8 @@ def post_update_to_slack(event, item):
                                                   td_link,
                                                   e['startedBy'])
             }
-        ]
+        ],
+        'as_user': True
     }
 
     if 'slack_ts' in item:
