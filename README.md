@@ -1,4 +1,10 @@
-# ecs-slack-notifications
+# Switch to Yoki API
+
+I created [Yoki](https://github.com/boroivanov/yoki) a supplementary ECS API. It utilizes the same idea as ecs-slack-notifications but it also provides much better functionality and notifications. Please consider using Yoki going forward. Thanks.
+
+# ecs-slack-notifications (DEPRECIATED)
+**No further development will be done on this app. See note above.**
+
 Based on the AWS example for handling ECS events https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_cwet_handling.html
 
 # Installation
@@ -39,7 +45,7 @@ sls deploy
 ```
 
 6. Create Slack Deploy Slash Command (optional)
-Create a slash command `/ecs-deploy` in the Slack app. Set the `Request URL` to the API Gateway created by serverless. 
+Create a slash command `/ecs-deploy` in the Slack app. Set the `Request URL` to the API Gateway created by serverless.
   - Go to API Gateway and select dev-ecs-slack
   - Under stages get the `Invoke URL` from POST method under /deploy
 
